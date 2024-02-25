@@ -1,3 +1,7 @@
-# tictactoe player file
+import random
+import math
 
-# first test
+
+class Player:
+    def __init__(self, letter): # letter is either X or O
+        self.letter = letter
