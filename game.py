@@ -6,3 +6,9 @@ class TicTacToe:
     def displayBoard(self):
         for row in [self.board[i*3:(i+1)*3] for i in range(3)]:
             print('| ' + ' | '.join(row) + ' |')
+
+    @staticmethod
+    def printBoardNums():
+        numberBoard = [[str(i) for i in range(j*3, (j+1)*3)] for j in range]
+        for row in numberBoard:
+            print('| ' + ' | '.join(row) + ' |')
