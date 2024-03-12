@@ -12,3 +12,11 @@ class TicTacToe:
         numberBoard = [[str(i) for i in range(j*3, (j+1)*3)] for j in range]
         for row in numberBoard:
             print('| ' + ' | '.join(row) + ' |')
+
+    def availableMoves(self):
+        moves = []
+        for (i,spot) in enumerate(self.gameBoard):
+            if spot == ' ':
+                moves.append(i) # append the index of the open spot
+        return moves 
+        
