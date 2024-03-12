@@ -20,3 +20,6 @@ class ComputerPlayer(Player):  # Computer class
 class HumanPlayer(Player):  # Human class
     def __init__(self, letter):
         super().__init__(letter)
+
+    def move(self, game):
+        pass
